@@ -1,0 +1,16 @@
+cat > .gitignore <<'EOF'
+# Build artifacts
+*.o
+rvsim
+rvsim.exe
+
+# Test binaries generados por build_tests.sh
+tests/*.bin
+tests/*.elf
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+EOF
